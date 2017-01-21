@@ -1,0 +1,7 @@
+bonobo:
+    resource: "@BonoboBundle/Resources/config/routing.yml"
+    prefix:   /bonobo/
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
