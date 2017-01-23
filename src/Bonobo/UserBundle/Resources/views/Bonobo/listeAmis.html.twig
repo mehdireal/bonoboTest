@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <<meta charset="UTF-8" />
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+</head>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Pseudo</th>
+        <th>Age</th>
+        <th>Famille</th>
+        <th>Race</th>
+        <th>Nourriture</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for ami in amis %}
+    <tr>
+        <td>{{ ami.id }}</td>
+        <td>{{ ami.username }}</td>
+        <td>{{ ami.age }}</td>
+        <td>{{ ami.famille }}</td>
+        <td>{{ ami.race }}</td>
+        <td>{{ ami.nourriture }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
